@@ -1,5 +1,13 @@
-# Project exclude paths
+### IntelliJ/Android Studio ###
+
+# - metadata
+/.idea/
+*.iml
+
+### Gradle ###
+
+# - temporary files
 /.gradle/
+
+# - build output
 /build/
-/build/classes/java/main/
-/build/classes/java/test/

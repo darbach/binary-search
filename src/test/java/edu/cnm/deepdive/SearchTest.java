@@ -9,7 +9,7 @@ import org.junit.jupiter.params.provider.MethodSource;
 
 class SearchTest {
 
-  @ParameterizedTest(name = "[{index}] Asserting {0} in {1}. Index range [{2}, {3}).")
+  @ParameterizedTest(name = "[{index}] Searching {0} in {1}. Index range [{2}, {3}).")
   @MethodSource({"needlePresent", "needleNotPresent"})
   void binarySearch(int needle, int[] haystack, int expectedBegin, int expectedEnd) {
     int actual = Search.binarySearch(needle, haystack);
